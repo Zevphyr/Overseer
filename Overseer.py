@@ -19,7 +19,7 @@ import time
 def cpu_status():
     value1 = psutil.cpu_count()
     print('Number of CPUs:', value1)
-    value2 = psutil.cpu_percent(percpu=True)
+    value2 = psutil.cpu_percent(interval=2,percpu=True)
     print('Percent in use:',value2)
 
 def inefficient():
